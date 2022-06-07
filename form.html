@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>KOSS FORM</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/b2b8b411ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="form-header">
+
+        <nav>
+            <div class="logo">
+                <a href="#"> <img src="img/koss.png"></a>
+            </div>
+        </nav>
+        <h1>
+            LOGIN FORM
+        </h1>
+        <p>
+            Fill up the form as Student or Professor
+        </p>
+    </section>
+
+    <section class="main" id="mai">
+
+        <div class="register">
+            <h6>FORM</h6>
+            <form name="register" id="register" method="post">
+                <label>Name :</label>
+                <br>
+                <input type="text" name="fname" id="me" placeholder="Enter your Name">
+                <br><br>
+                <label>Email :</label>
+                <br>
+                <input type="email" name="email" id="em" placeholder="Enter your Valid Email">
+                <br><br>
+                <div class="wrapper" >
+                    <ul>
+                        <li>Designation
+                            <ul>
+                                <li onclick="functionm()">Professor</li>
+                                <li onclick="functionf()">Student</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                
+    <input type="radio" id="male" name="gen" value="true">
+  <label name="male">Male</label><br>
+  <input type="radio" id="css" name="gen" value="true">
+  <label name="female">Female</label><br>
+  <input type="radio" id="javascript" name="gen" value="true">
+  <label name="othert">Other</label>  
+                
+            </form>
+
+            <form name="reg1" id="reg1" method="post">
+                <label>Employee ID :</label>
+                <br>
+                <input type="text" name="Employee" id="n" placeholder="Emloyee ID">
+                <br><br>
+                <label>Department :</label>
+                <br>
+                <input type="text" name="fname" id="n" placeholder="Department">
+                <br><br>
+            </form>
+            <form name="reg2" id="reg2" method="post">
+                <label>Roll No. :</label>
+                <br>
+                <input type="text" name="rollno" id="n" placeholder="Roll No.">
+                <br><br>
+                <label>Department :</label>
+                <br>
+                <input type="text" name="fname" id="n" placeholder="Department">
+                <br><br>
+            </form>
+            <div sub>
+                <a href="#" class="button" onclick="valid(document.register.email,document.register.fname,document.reg1.Employee,document.reg2.rollno,document.register.gen)">Submit</a>
+            </div>
+        </div>
+        <script>
+            function valid(z, naam,id,roll,g) {
+                var flag = 0;
+                var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                var NAME = naam.value;
+                var ROLL = roll.value;
+                var ID = id.value;
+                var matches = NAME.match(/\b[^\d\s]+\b/g);
+                if (matches && NAME.length >= 2) {
+                    flag = 0
+                } else {
+                    alert("You have entered an invalid NAME!");
+                    flag = 1;
+                }
+                if ((ROLL.length >= 8)||(ID.length>=8)){
+                    flag = 0
+                } else {
+                    alert("You have entered an invalid Roll No./employee id!");
+                    flag = 1;
+                }
+                
+                if (z.value.match(format)) {
+                    flag = 0;
+                }
+                else {
+                    alert("You have entered an invalid email address!");
+                    flag = 1;
+                }
+                if (g.value=='') {
+                    flag=1;
+                    alert("You have not selected gender!");
+                }
+                else
+                {
+                    flag=0;
+                }
+            }
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function functionm() {
+                var x = document.getElementById("reg1");
+                var y = document.getElementById("reg2");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    y.style.display = "block";
+                } else {
+                    x.style.display = "block";
+                    y.style.display = "none";
+                }
+            }
+            function functionf() {
+                var x = document.getElementById("reg2");
+                var y = document.getElementById("reg1");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    y.style.display = "block";
+                } else {
+                    x.style.display = "block";
+                    y.style.display = "none";
+                }
+            }
+        </script>
+        <hr>
+        <hr>
+    </section>
+
+    <section class="footer">
+        <h4>CONTACT US</h4>
+
+        <a href="https://www.instagram.com/may_might_trip/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100075425263403"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/shrish113398"><i class="fab fa-github"></i></a>
+        <p>Shrish Tripathi</p>
+        <p> 21MA10059</p>
+        <p> shrishtripof@gmail.com</p>
+
+
+        <p> Made by shrish C-:
+        </p>
+    </section>
+</body>
+
+</html>

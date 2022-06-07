@@ -1,0 +1,229 @@
+*{
+	margin :0;
+	padding :0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*HEAD PART*/
+
+.logo img{
+    float:left;
+    width:150px;
+    height:auto;
+}
+nav{
+    float:center;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 13px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid ;
+    background:#7e57c2;
+    transition: 1s;
+}
+/*starts*/
+input{
+    
+    width:50%;
+    display:inline-block;
+    margin:15px -120px;
+    
+}
+
+    
+    .wrapper{
+        position: relative;
+    width: 860px; 
+    margin: 0 35%;
+
+    
+    }
+    .wrapper ul{
+    list-style: none;
+    margin-top: 0%;
+    
+    }
+    .wrapper ul li {
+    background: #ffffff;
+    width: 170px;
+    border: 1px solid #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    .wrapper ul li:hover{
+    background: rgb(122, 168, 199); 
+    }
+    
+    .wrapper ul ul{
+    display: none;
+    }
+    .wrapper ul li:hover > ul{
+    display: block;
+    }
+    .wrapper ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+    }
+    /*ends*/
+/*TEACHER INFO OR THE COURSE*/
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+
+
+/*FOOTER */
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+/*FORM FILL UP */
+
+.form-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/kossbg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    font-size: 40px;
+}
+.form-header h1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.main{
+    background-color:white;
+}
+.register{
+    display: block;
+    box-shadow:12px 15px 50px  #0e101f;
+    border-style:groove;
+    border-radius: 20px;
+    width: 600px;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/formbg.jfif);
+}
+#reg1{
+    display: none;
+    
+}
+#reg2{
+    display: none;
+    
+}
+.register:hover{
+    box-shadow: 12px 15px 100px black;
+}
+
+h6{
+    font-size:40px;
+    color: white; 
+}
+label{
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+#Male, #Female, #Other{
+    
+    justify-content:end;
+    display:inline-block;
+    position: relative;
+    width: 100px;
+    
+}
+#male, #female, #other{
+    z-index:-1;
+    color: white;
+}
+/*MEDIA QUERY TO MAKE WEBSITE RESPONSIVE*/
+@media(max-width:600px){
+    
+    .form-header h1{
+        margin-top:15% ;
+    }
+    .form-header p{
+        font-size: 15px;
+    }
+    h6,h1,h2{
+        font-size:20px; 
+        margin-left: 0px;
+    }
+    .register{
+        width: 200px;
+        margin-left: 70px;
+        text-align:center;
+    }
+    .wrapper ul li{
+        width: 100px;
+        font-size: 10px;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    label{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,7 +3,7 @@
 	padding :0;
     font-family: 'Roboto Condensed', sans-serif;
 }
-/*HEAD PART*/
+
 
 .logo img{
     float:left;
@@ -33,7 +33,6 @@ nav{
     background:#7e57c2;
     transition: 1s;
 }
-/*starts*/
 input{
     
     width:50%;
@@ -84,9 +83,6 @@ input{
     top: 0;
     position: absolute;
     }
-    /*ends*/
-/*TEACHER INFO OR THE COURSE*/
-
 h2{
     font-size: 40px;
     font-weight: 600;
@@ -105,9 +101,6 @@ h3{
 
 
 
-/*FOOTER */
-
-
 .footer{
     width: 100%;
     text-align: center;
@@ -118,8 +111,6 @@ h3{
     margin-bottom: 25px;
     margin-top: 20px;
 }
-
-/*FORM FILL UP */
 
 .form-header{
     height: 50vh;
@@ -182,7 +173,6 @@ label{
     z-index:-1;
     color: white;
 }
-/*MEDIA QUERY TO MAKE WEBSITE RESPONSIVE*/
 @media(max-width:600px){
     
     .form-header h1{

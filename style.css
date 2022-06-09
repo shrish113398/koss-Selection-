@@ -78,11 +78,6 @@ input{
     .wrapper ul li:hover > ul{
     display: block;
     }
-    .wrapper ul ul ul{
-    margin-left: 170px;
-    top: 0;
-    position: absolute;
-    }
 h2{
     font-size: 40px;
     font-weight: 600;
